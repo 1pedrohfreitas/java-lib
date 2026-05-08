@@ -16,11 +16,11 @@ import static com.github.tomakehurst.wiremock.core.WireMockConfiguration.wireMoc
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.assertj.core.api.Assertions.assertThatThrownBy;
 
-@Disabled("Temporarily disabled due to WireMock timeout issues")
+@Disabled("Temporarily disabled due to WireMock + Reactor Netty timeout issues in CI")
 class TelegramBotClientIT {
 
     @RegisterExtension
-    WireMockExtension wireMock = WireMockExtension.newInstance()
+    static WireMockExtension wireMock = WireMockExtension.newInstance()
             .options(wireMockConfig().dynamicPort())
             .failOnUnmatchedRequests(false)
             .build();
