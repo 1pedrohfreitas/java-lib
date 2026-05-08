@@ -11,7 +11,7 @@
         <relativePath/>
     </parent>
 
-    <groupId>com.github.javalib</groupId>
+    <groupId>dev.pedrohfreitas.javalib</groupId>
     <artifactId>java-lib</artifactId>
     <version>0.1.0-SNAPSHOT</version>
     <name>java-lib</name>
@@ -204,7 +204,7 @@
                                 </rule>
                             </rules>
                             <excludes>
-                                <exclude>com/github/javalib/JavaLibApplication.class</exclude>
+                                <exclude>dev/pedrohfreitas/javalib/JavaLibApplication.class</exclude>
                                 <exclude>**/dto/**</exclude>
                                 <exclude>**/config/**</exclude>
                             </excludes>

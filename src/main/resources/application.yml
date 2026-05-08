@@ -13,7 +13,7 @@ spring:
 
 logging:
   level:
-    com.github.javalib: INFO
+    dev.pedrohfreitas.javalib: INFO
   structured:
     format:
       console: logstash

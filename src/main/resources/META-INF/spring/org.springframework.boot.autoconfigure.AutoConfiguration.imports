@@ -1,3 +1,3 @@
-com.github.javalib.infrastructure.telegram.config.TelegramConfig
-com.github.javalib.infrastructure.google.config.GoogleOAuth2Config
-com.github.javalib.infrastructure.config.SecurityConfig
+dev.pedrohfreitas.javalib.infrastructure.telegram.config.TelegramConfig
+dev.pedrohfreitas.javalib.infrastructure.google.config.GoogleOAuth2Config
+dev.pedrohfreitas.javalib.infrastructure.config.SecurityConfig

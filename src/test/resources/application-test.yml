@@ -10,7 +10,7 @@ spring:
 
 logging:
   level:
-    com.github.javalib: DEBUG
+    dev.pedrohfreitas.javalib: DEBUG
 
 java-lib:
   telegram:
