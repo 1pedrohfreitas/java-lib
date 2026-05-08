@@ -1,0 +1,3 @@
+com.github.javalib.infrastructure.telegram.config.TelegramConfig
+com.github.javalib.infrastructure.google.config.GoogleOAuth2Config
+com.github.javalib.infrastructure.config.SecurityConfig

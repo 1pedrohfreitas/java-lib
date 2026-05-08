@@ -1,0 +1,29 @@
+spring:
+  security:
+    oauth2:
+      client:
+        registration:
+          google:
+            client-id: test-client-id
+            client-secret: test-client-secret
+            scope: openid,profile,email
+
+logging:
+  level:
+    com.github.javalib: DEBUG
+
+java-lib:
+  telegram:
+    bot-token: test-bot-token
+    api-url: http://localhost:${wiremock.server.port:8089}/
+    retry:
+      max-attempts: 1
+      initial-backoff: 10ms
+      max-backoff: 50ms
+    connect-timeout: 2s
+    read-timeout: 2s
+  security:
+    google:
+      expected-audience: test-client-id
+      token-info-url: http://localhost:${wiremock.server.port:8089}/tokeninfo
+      user-info-url: http://localhost:${wiremock.server.port:8089}/userinfo

@@ -1,0 +1,16 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(java --version)",
+      "Bash(mvn --version)",
+      "Bash(mvn test *)",
+      "Bash(apt-get update *)",
+      "Bash(apt-get install *)",
+      "Bash(javac --version)",
+      "Bash(javac --release 21 --version)",
+      "Bash(mvn test-compile *)",
+      "Bash(xargs jar tf)",
+      "Bash(mvn verify *)"
+    ]
+  }
+}

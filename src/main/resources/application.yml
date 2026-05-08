@@ -1,0 +1,43 @@
+spring:
+  application:
+    name: java-lib
+  threads:
+    virtual:
+      enabled: true
+  jackson:
+    default-property-inclusion: non_null
+    serialization:
+      write-dates-as-timestamps: false
+    date-format: yyyy-MM-dd'T'HH:mm:ss.SSS'Z'
+    time-zone: UTC
+
+logging:
+  level:
+    com.github.javalib: INFO
+  structured:
+    format:
+      console: logstash
+
+server:
+  port: 8080
+
+java-lib:
+  telegram:
+    bot-token: ${TELEGRAM_BOT_TOKEN:}
+    api-url: https://api.telegram.org/bot
+    retry:
+      max-attempts: 3
+      initial-backoff: 500ms
+      max-backoff: 5s
+    connect-timeout: 10s
+    read-timeout: 30s
+  security:
+    cors:
+      allowed-origins: "*"
+    google:
+      allowed-issuers:
+        - https://accounts.google.com
+        - accounts.google.com
+      expected-audience: ${GOOGLE_CLIENT_ID:}
+      user-info-url: https://openidconnect.googleapis.com/v1/userinfo
+      token-info-url: https://oauth2.googleapis.com/tokeninfo
